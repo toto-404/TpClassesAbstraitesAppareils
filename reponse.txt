@@ -11,3 +11,8 @@
    - virtual : fournie avec une implémentation de base dans la classe parente, mais peut être remplacée dans une classe dérivée.
 
    - abstract : sans implémentation dans la classe parente, non optionnelle ; obligatoirement implémentée dans les classes dérivées non abstraites.
+
+4. Pourquoi ToString() est-elle utile ?
+
+   - `ToString()` fournit une représentation textuelle de l’objet, ce qui est utile pour le débogage, les journaux et l’affichage utilisateur. En la redéfinissant (`override`) dans une classe dérivée, on peut fournir un contenu lisible et contextuel (par ex. le modèle et la marque de l’appareil).
+

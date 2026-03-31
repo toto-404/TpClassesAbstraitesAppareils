@@ -1,7 +1,14 @@
 abstract class Appareil{
-    private string marque { get; set; }
-    private string modele { get; set; }
-    private DateTime dateFabrication { get; set; }
+    private protected string marque { get; set; }
+    private protected string modele { get; set; }
+    private protected DateTime dateFabrication { get; set; }
+
+    public Appareil(string marque, string modele, DateTime dateFabrication)
+    {
+        this.marque = marque;
+        this.modele = modele;
+        this.dateFabrication = dateFabrication;
+    }
 
     //les methodes
 
