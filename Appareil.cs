@@ -1,4 +1,4 @@
-abstract class Appareil
+public abstract class Appareil
 {
     protected string marque;// attribut protégé pour être accessible dans les classes dérivées
     public string Marque { get; set; } // propriété publique pour accéder à la marque equuivalent à un getter/setter
@@ -10,9 +10,9 @@ abstract class Appareil
 
     public Appareil(string marque, string modele, DateTime dateFabrication)
     {
-        this.marque = marque;
-        this.modele = modele;
-        this.dateFabrication = dateFabrication;
+        Marque = marque;
+        Modele = modele;
+        DateFabrication = dateFabrication;
     }
 
     //les methodes

@@ -26,3 +26,7 @@
 
 7. À quoi sert un dictionnaire dans un programme ?
    - Un dictionnaire (comme `Dictionary<TKey, TValue>` en C#) sert à stocker des paires clé-valeur, permettant un accès rapide et efficace aux valeurs via leur clé unique (recherche en O(1)), utile pour des données indexées comme un annuaire ou un cache.
+
+8. Pourquoi le try...catch est-il utile dans cette méthode ?
+
+   - Le try...catch permet de gérer les exceptions (erreurs inattendues) qui peuvent survenir dans le bloc try. Si une exception est levée, le bloc catch l'intercepte, évitant un crash du programme et permettant une gestion appropriée (par ex. afficher un message d'erreur ou effectuer une action corrective).

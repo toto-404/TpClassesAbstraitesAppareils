@@ -19,7 +19,7 @@ class Program
         // phone1.AfficherGarantie();
         // phone1.AfficherInfos();
 
-        List <Appareil> appareils = new List<Appareil>();
+        List<Appareil> appareils = new List<Appareil>();
         appareils.Add(ordi1);
         appareils.Add(phone1);
 
@@ -35,5 +35,21 @@ class Program
         //utilise modele comme clé pour le dictionnaire
         Dictionary<string, Appareil> dictAppareils = new Dictionary<string, Appareil>();
         dictAppareils.Add(ordi1.Modele, ordi1);
+
+        // créer catalog et appareils (suppose classes Ordinateur et Smartphone implémentées)
+        CatalogueAppareils catalogue = new CatalogueAppareils();
+
+        Ordinateur ordi2 = new Ordinateur("Lenovo", "ThinkPad", new DateTime(2020, 5, 1), 15.6);
+        Smartphone phone2 = new Smartphone("Samsung", "GalaxyS20", new DateTime(2019, 3, 15), 3);
+
+        catalogue.AjouterAppareil(ordi2);
+        catalogue.AjouterAppareil(phone2);
+
+        // recherche existante
+        catalogue.RechercherAppareil("ThinkPad");
+
+        // recherche inexistante
+        catalogue.RechercherAppareil("InexistantModel");
+
     }
 }
