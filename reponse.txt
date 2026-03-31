@@ -23,3 +23,6 @@
 6. Pourquoi peut-on stocker des Ordinateur et des Smartphone dans une liste de type Appareil ?
 
    - Parce qu’`Ordinateur` et `Smartphone` héritent de `Appareil`. En programmation orientée objet, on peut utiliser le type parent (`Appareil`) pour référencer n’importe quelle instance de ses classes dérivées (polymorphisme), donc une `List<Appareil>` accepte ces objets.
+
+7. À quoi sert un dictionnaire dans un programme ?
+   - Un dictionnaire (comme `Dictionary<TKey, TValue>` en C#) sert à stocker des paires clé-valeur, permettant un accès rapide et efficace aux valeurs via leur clé unique (recherche en O(1)), utile pour des données indexées comme un annuaire ou un cache.

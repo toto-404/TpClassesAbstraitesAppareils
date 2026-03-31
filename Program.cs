@@ -31,5 +31,9 @@ class Program
             appareil.AfficherGarantie();
             appareil.AfficherInfos();
         }
+
+        //utilise modele comme clé pour le dictionnaire
+        Dictionary<string, Appareil> dictAppareils = new Dictionary<string, Appareil>();
+        dictAppareils.Add(ordi1.Modele, ordi1);
     }
 }

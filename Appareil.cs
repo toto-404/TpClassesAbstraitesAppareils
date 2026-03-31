@@ -1,7 +1,12 @@
-abstract class Appareil{
-    private protected string marque { get; set; }
-    private protected string modele { get; set; }
-    private protected DateTime dateFabrication { get; set; }
+abstract class Appareil
+{
+    protected string marque;// attribut protégé pour être accessible dans les classes dérivées
+    public string Marque { get; set; } // propriété publique pour accéder à la marque equuivalent à un getter/setter
+    protected string modele;
+    public string Modele { get; set; }
+    protected DateTime dateFabrication { get; set; }
+    public DateTime DateFabrication { get; set; }
+
 
     public Appareil(string marque, string modele, DateTime dateFabrication)
     {
@@ -12,11 +17,12 @@ abstract class Appareil{
 
     //les methodes
 
-    public void Allumer(){
+    public void Allumer()
+    {
         Console.WriteLine("L'appareil s'allume.");
     }
 
-    public virtual void  AfficherType()
+    public virtual void AfficherType()
     {
         Console.WriteLine("Je suis un appareil.");
     }
