@@ -1,0 +1,13 @@
+1. Pourquoi la classe Appareil est-elle abstraite ?
+
+   - Parce qu’elle représente un concept général (modèle de base) et ne doit pas être instanciée directement. Elle contient des méthodes abstraites que les classes dérivées doivent implémenter.
+
+2. Peut-on écrire Appareil a = new Appareil(...); ?
+
+   - Non. Une classe abstraite ne peut pas être instanciée avec `new`. Il faut instancier une classe dérivée concrète (par exemple `Smartphone` ou `Ordinateur` si elles existent) qui hérite d’`Appareil`.
+
+3. Quelle est la différence entre une méthode virtual et une méthode abstract ?
+
+   - virtual : fournie avec une implémentation de base dans la classe parente, mais peut être remplacée dans une classe dérivée.
+
+   - abstract : sans implémentation dans la classe parente, non optionnelle ; obligatoirement implémentée dans les classes dérivées non abstraites.
