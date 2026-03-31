@@ -16,3 +16,10 @@
 
    - `ToString()` fournit une représentation textuelle de l’objet, ce qui est utile pour le débogage, les journaux et l’affichage utilisateur. En la redéfinissant (`override`) dans une classe dérivée, on peut fournir un contenu lisible et contextuel (par ex. le modèle et la marque de l’appareil).
 
+5. Quel type de données C# permet de stocker une date ?
+
+   - En C#, on utilise le type `DateTime` pour stocker des valeurs de date. `DateTime` prend en charge date + heure et permet aussi la manipulation de fuseau horaire via `DateTimeKind`.
+
+6. Pourquoi peut-on stocker des Ordinateur et des Smartphone dans une liste de type Appareil ?
+
+   - Parce qu’`Ordinateur` et `Smartphone` héritent de `Appareil`. En programmation orientée objet, on peut utiliser le type parent (`Appareil`) pour référencer n’importe quelle instance de ses classes dérivées (polymorphisme), donc une `List<Appareil>` accepte ces objets.
